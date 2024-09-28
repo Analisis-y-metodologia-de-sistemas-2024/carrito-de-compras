@@ -1801,7 +1801,7 @@ Las plantillas en Django permiten definir la presentación de los datos de maner
 graph TD;
     A[Vista en Django] --> B1[Datos del Modelo]
     B1 --> C1[Contexto]
-    C1 --> D1[Template (HTML)]
+    C1 --> D1[Template HTML]
     D1 --> E1[Renderización]
     E1 --> F1[Respuesta HTTP]
     F1 --> G1[Navegador del Usuario]
