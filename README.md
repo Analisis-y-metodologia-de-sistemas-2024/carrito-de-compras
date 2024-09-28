@@ -1551,7 +1551,7 @@ Las vistas en Django son funciones o clases que reciben solicitudes HTTP y retor
 ```mermaid
 graph TD;
     A[Usuario] --> B1[Solicitud HTTP]
-    B1 --> C1[URLconf de Django (urls.py)]
+    B1 --> C1[URLconf de Django urls.py]
     C1 --> D1[Vista correspondiente]
     D1 --> E1[Operación en la Base de Datos]
     E1 --> F1[Generar Respuesta HTTP]
@@ -1568,7 +1568,7 @@ sequenceDiagram
     participant DB as Base de Datos
 
     Usuario ->> Browser: Clic en "Añadir al carrito"
-    Browser ->> Django: Enviar solicitud POST (/carrito/agregar)
+    Browser ->> Django: Enviar solicitud POST /carrito/agregar)
     Django ->> DB: Guardar ID del Producto en el Carrito
     DB -->> Django: Confirmar operación
     Django -->> Browser: Respuesta HTTP (Producto añadido)
